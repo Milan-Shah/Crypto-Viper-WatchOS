@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sCp-xH-imz">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Crypto List -->
+        <scene sceneID="tvn-gh-l6A">
+            <objects>
+                <controller identifier="List" title="Crypto List " id="sCp-xH-imz" customClass="ListInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="left" id="Vf6-Qc-5r9">
+                            <items>
+                                <tableRow identifier="ListRow" selectable="NO" id="sk8-QX-kfh" customClass="ListRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="eIz-zg-Cmm">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="iry-AL-dt6">
+                                                <color key="color" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="0.0" id="Zmv-eD-YmF">
+                                                <items>
+                                                    <group width="1" height="20" alignment="left" spacing="4" id="L2u-EX-cuN">
+                                                        <items>
+                                                            <label width="108" height="26" alignment="right" text="2019-01-25 (Monday)" textAlignment="right" id="09V-Jf-FJz">
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" type="italicSystem" weight="light" pointSize="8"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="PXy-Gf-qOf">
+                                                        <items>
+                                                            <label width="35" height="28" alignment="left" text="BTC" textAlignment="left" id="Fxq-un-WRq">
+                                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="17"/>
+                                                            </label>
+                                                            <label width="78" height="28" alignment="right" text="$3891.90" textAlignment="right" id="LqY-N1-uiF">
+                                                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" type="italicSystem" weight="semibold" pointSize="13"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="vou-6c-PDW">
+                                                        <items>
+                                                            <label width="109" alignment="right" text="-2.0%  (-90.0)" textAlignment="right" id="Eaw-Bb-jiL">
+                                                                <color key="textColor" red="0.97304741520000004" green="0.17194275640000001" blue="0.1038768425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cryptoDateLabel" destination="09V-Jf-FJz" id="w8D-pO-7dA"/>
+                                        <outlet property="cryptoNameLabel" destination="Fxq-un-WRq" id="ady-zt-dOb"/>
+                                        <outlet property="cryptoValueChangeLabel" destination="Eaw-Bb-jiL" id="xBf-qh-j1A"/>
+                                        <outlet property="cryptoValueLabel" destination="LqY-N1-uiF" id="9bo-wl-dpa"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="listTable" destination="Vf6-Qc-5r9" id="73O-sx-8El"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-365" y="168"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.5104688839" green="0.97475406450000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
